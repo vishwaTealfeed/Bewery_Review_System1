@@ -1,42 +1,157 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.body{
+ width: 100%;
+  margin: 0;
+  /* display: flex;
+  place-items: center; */
+  
+}
+.navbar-container {
+  width: 1490px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+ 
+  background-color: goldenrod;
+}
+.navheading{
+  margin-left: 11rem;
+}
+.navbar-logo {
+  height: 80px;
+  margin: 1rem;
+  margin-right: 10rem;
+}
+.btn{
+  margin-top: 2rem;
+  height: 50px;
+}
+.navbar-logo1{
+  margin-left: 1rem;
+  height: 60px;
+  
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.navbar-item {
+  margin-right: 15px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-item a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar-icon {
+  height: 20px;
+  margin-right: 5px;
+}
+.navbar-search {
+  /* margin-left: 8rem; */
+  width:300px;
+  height: 25px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
 }
 
-.card {
-  padding: 2em;
+.navbar-dropdown {
+  width:100px;
+  margin-left: 20rem;
+    height: 35px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
 }
 
-.read-the-docs {
-  color: #888;
+
+.brewery-card {
+  border: 1px solid #ddd;
+  width: 280px;
+  height: 180px;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 10px;
+  background-color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.brewery-card h2 {
+  color: goldenrod;
+  margin-top: 0;
+}
+
+.brewery-card p {
+  margin: 5px 0;
+}
+
+.brewery-card a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+.brewery-card a:hover {
+  text-decoration: underline;
+}
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.app-container {
+  padding: 20px;
+}
+
+.search-container {
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  margin-top: 2rem;
+  height: 20px;
+  width: 300px;
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-container select {
+  margin-top: 2rem;
+  padding: 8px;
+  height: 40px;
+  width: 170px;
+  font-size: 16px;
+}
+
+.brewery-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brewery-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.brewery-card h2 {
+  margin-top: 0;
+}
+
+.brewery-card p {
+  margin: 5px 0;
 }
