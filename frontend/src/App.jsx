@@ -1,21 +1,20 @@
-import React from 'react'
-import Navbar from '../src/components/Navbar'
-import Dashboard from '../src/components/Dashboard'
-import './App.css'
+import React from "react";
+import Navbar from "../src/components/Navbar";
+import "./App.css";
+import { DetailCard } from "./components/Detail-Card/detail-card";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
 
-
-function App() {
-  
-
+export default function App() {
   return (
     <>
-  
-    <Navbar/>
-  <Dashboard/>
-
- 
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/brewer/:id" element={<DetailCard />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
-
-export default App
